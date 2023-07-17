@@ -1,0 +1,238 @@
+/* Hero */
+
+main > .a-hero {
+    background-image: url('../../assets/about/mobile/image-hero-whitecup.jpg');
+    background-size: cover;
+    height: 400px;
+    color: #FEFCF7;
+    text-align: center;
+    padding: 0 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.a-hero > h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.a-hero > p,
+.quality > .quality-desc > p,
+.commitment > .commitment-desc > p {
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 25px;
+}
+
+/* Commitment */
+
+.commitment {
+    text-align: center;
+    color: var(--dark-grey-blue);
+    margin-bottom: 120px;
+}
+
+.commitment > .coffee-making-img {
+    background-image: url('../../assets/about/mobile/image-commitment.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.commitment > .commitment-desc > h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+/* Quality */
+
+.quality {
+    background-color: #2C343E;
+    text-align: center;
+    color: #FEFCF7;
+    padding: 2em 1em;
+    border-radius: 10px;
+    margin-bottom: 120px;
+    max-width: 324px;
+}
+
+.quality > .coffee-img {
+    background-image: url('../../assets/about/mobile/image-quality.jpg');
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -100px;
+}
+
+/* Headquarters */
+.headerquarters {
+    text-align: center;
+}
+
+.headerquarters > h2 {
+    color: #83888F;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 72px;
+}
+
+.headerquarters > .hq-container > .headerquarter {
+    color: #333D4B;
+}
+
+.headerquarters > .hq-container > .headerquarter  {
+    margin-bottom: 80px;
+}
+
+.headerquarters > .hq-container > div:last-child {
+    margin-bottom: 0;
+}
+
+.headerquarters > .hq-container > .headerquarter > p {
+    line-height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    /* Hero */
+   main > .a-hero {
+        background-image: url('../../assets/about/tablet/image-hero-whitecup.jpg');
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 58px;
+        padding-right: 233px;
+        margin-bottom: 144px;
+   }
+
+   /* Commitment */
+   .commitment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 300px;
+   }
+
+   .commitment > .coffee-making-img {
+        background-image: url('../../assets/about/tablet/image-commitment.jpg');
+        height: 500px;
+        width: 300px;  
+   }
+
+   .commitment > .commitment-desc {
+    max-width: 339px;
+   }
+
+   /* Quality */
+
+   .quality {
+        max-width: 700px;
+        padding: 40px 50px;
+   }
+
+   .quality > .coffee-img {
+        background-image: url('../../assets/about/tablet/image-quality.jpg');
+        width: 100%;
+        height: 350px;
+        margin-top: -200px;
+        margin-bottom: 60px;
+   }
+
+    /* Headerquarters */
+    .headerquarters {
+        text-align: left;
+        width: 100%;
+    }
+
+    .headerquarters > .hq-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerquarters > .hq-container > .headerquarter  {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1150px) {
+    main > .a-hero {
+        background-image: url('../../assets/about/desktop/image-hero-whitecup.jpg');
+        max-width: 800px;
+        
+    }
+    .a-hero > h1 {
+        font-size: 40px;
+    }
+
+    .a-hero > p {
+        max-width: 50%;
+        font-size: 16px;
+        opacity: 1;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    /* Commitment */
+
+    .commitment {
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin-bottom: 250px;
+    }
+
+    .commitment > .coffee-making-img {
+        background-image: url('../../assets/about/desktop/image-commitment.jpg');
+        width: 450px;
+        height: 500px;
+    }
+    .commitment > .commitment-desc {
+        max-width: 540px;
+    }
+
+    /* Quality */
+
+    .quality {
+        padding: 30px 85px;
+        max-width: 900px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        text-align: left;
+    }
+
+
+    .quality > .coffee-img {
+        height: 500px;
+        width: 100%;
+        background-image: url('../../assets/about/desktop/image-quality.jpg');
+    }
+    .quality > .quality-desc {
+        width: 100%;
+    }
+
+    .quality > .quality-desc > h1 {
+        font-size: 30px;
+    }
+
+    /* Headquarters */
+
+    .headerquarters {
+        max-width: 1070px;
+    }
+
+
+
+
+
+
+    
+}

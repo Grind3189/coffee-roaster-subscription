@@ -1,0 +1,409 @@
+/* Hero Section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-image: url('../../assets/home/mobile/image-hero-coffeepress.jpg');
+    background-size: cover;
+    padding: 100px 24px;
+    border-radius: 10px;
+    color: #FEFCF7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.hero > h1 {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hero > p {
+    line-height: 25px;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 39px;
+}
+
+.create-plan {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Coffee Section */
+.coffee-choices {
+    margin: 120px 0;
+}
+
+.coffee-choices > .our-collection-container > h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(204, 204, 204)
+}
+
+.coffee-choices {
+    text-align: center;
+}
+.coffee-content {
+    margin-bottom: 49px;
+    color: var(--dark-grey-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coffee-content > img {
+    width: 200px;
+    height: 151px;
+    margin-left: 20px;
+}
+
+.coffee-content > .coffee-desc > h3 {
+    font-size: 24px;
+}
+
+.coffee-content > .coffee-desc > p {
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 282px;
+    color: var(--dark-grey-blue);
+}
+
+.coffee-choices > div:last-child {
+    margin-bottom: 0;
+}
+
+/* Why choose us Section */
+
+.choose-us-first {
+    background-color: #2C343E;
+    color: #FEFCF7;
+    padding: 64px 24px;
+    height: 902px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 327px;
+}
+
+.choose-us-first > h1 {
+    font-size: 28px;
+}
+
+.choose-us-first > p {
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+.choose-us-second {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: -700px;
+}
+
+.choose-us-second > .our-service {
+    text-align: center;
+    background-color: var(--dark-cyan);
+    padding: 0 32px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FEFCF7;
+    border-radius: 8px;
+    max-width: 279px;
+}
+
+.choose-us-second > div:last-child {
+    margin-bottom: 120px;
+}
+
+.choose-us-second > .our-service > img {
+    margin-bottom: 56px;
+}
+.choose-us-second > .our-service > h2 {
+    font-size: 24px;
+    font-weight: 900;
+} 
+
+.choose-us-second > .our-service > .service-desc p {
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 0;
+
+}
+
+/* How it works Section */
+
+.tutorial-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorial-container > h1 {
+    color: var(--grey);
+    margin-bottom: 80px;
+}
+
+.tutorial-container > .line-container {
+    display: none;
+}
+
+.tutorial-container >
+.step-tutorial-container >
+.step-tutorial-content h1 {
+    color: var(--pale-orange);
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.tutorial-container >
+.step-tutorial-container >
+.step-tutorial-content h2 {
+    font-size: 28px;
+    font-weight: 900;
+}
+.tutorial-container >
+.step-tutorial-container >
+.step-tutorial-content p {
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tutorial-container > .step-tutorial-container > div:last-child {
+    margin-bottom: 79px;
+}
+
+@media screen and (min-width: 768px) {
+    /* Hero Section */
+     .hero {
+        background-image: url('../../assets/home/tablet/image-hero-coffeepress.jpg');
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 58px;
+     }
+
+     .hero > h1 {
+        font-size: 48px;
+        width: 60%;
+     }
+
+    .create-plan {
+        font-weight: 900;
+        font-family: inherit;
+        font-size: 18px;
+     }
+
+     .hero > p {
+        max-width: 398px;
+     }
+
+     /* Coffee Section */
+     .coffee-choices {
+        margin: 144px 0;
+     }
+     
+    .coffee-choices > .our-collection-container > h1 {
+        font-size: 96px;
+    }
+
+    .coffee-choices > div:nth-child(2) {
+        margin-top: -125px;
+    }
+
+    .coffee-content {
+        flex-direction: row;
+    }
+
+    .coffee-content > img {
+        width: 255px;
+        height: 193px;
+    }
+
+    /* Why choose us Section */
+    .choose-us-first {
+        max-width: 600px;
+        padding: 64px 50px;
+        height: 400px;
+    }
+
+    .choose-us-first > h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .choose-us-first > p {
+        line-height: 25px;
+        margin-top: 24px;
+    }
+
+    .choose-us-second {
+        margin-top: -270px;
+    }
+
+    .choose-us-second > .our-service {
+        flex-direction: row;
+        height: 180px;
+        max-width: 573px;
+        text-align: left;
+        gap: 55px;
+        padding: 0 62px;
+    }
+
+    .choose-us-second > .our-service > img {
+        margin: 0;
+        width: 56px;
+    }
+
+    .choose-us-second > .our-service > .service-desc > p {
+        max-width: 344px;
+    }
+
+    /* How it works Section */
+
+    .tutorial-container {
+        text-align: left;
+        align-items: flex-start;
+        gap: 44px
+    }
+
+    .tutorial-container > h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .tutorial-container > .line-container {
+        display: flex;
+        width: 467px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step-tutorial-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px
+    }
+
+    .tutorial-container > .step-tutorial-container > .step-tutorial-content {
+        width: 223px;
+    }
+    .tutorial-container >
+    .step-tutorial-container >
+    .step-tutorial-content h1 {
+        margin: 0;
+    }
+
+    .tutorial-container > .step-tutorial-container > div:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* Coffee Section */
+    .hero {
+        background-image: url('../../assets/home/desktop/image-hero-coffeepress.jpg');
+        padding-left: 86px;
+       
+    }
+
+    .hero > h1 {
+        font-size: 72px;
+        margin-bottom: 0;
+        line-height: 72px;
+        max-width: 70%;
+    }
+
+    .hero > p {
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+    .coffee-choices {
+        margin-top: 0;
+    }
+
+      .coffee-choices > .our-collection-container > h1 {
+        font-size: 110px;
+    }
+
+    .all-coffee-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .all-coffee-container > .coffee-content {
+        flex-direction: column;
+        margin-top: -140px;
+    }
+
+    .coffee-choices > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .all-coffee-container > .coffee-content > .coffee-desc > p {
+        max-width: 255px;
+        font-size: 16px;
+    }
+    
+    /* Why choose us Section */
+    .choose-us-first {
+        max-width: 1500px;
+        padding: 64px 250px;
+    }
+
+    .choose-us-first > p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .choose-us-second {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .choose-us-second > .our-service {
+        flex-direction: column;
+        height: 382px;
+        max-width: 350px;
+        text-align: center;
+    }
+    .choose-us-second > div:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* How it works Section */
+    .step-tutorial-container {
+        gap: 90px;
+    }
+
+}

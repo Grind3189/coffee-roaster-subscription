@@ -1,0 +1,19 @@
+.button-style {
+    background-color: var(--dark-cyan);
+    padding: 15px 31px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.button-style:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+@media screen and (min-width: 1024px) {
+    .button-style:not(:disabled):hover {
+        background-color: #66D2CF;
+    }
+}

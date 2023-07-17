@@ -1,0 +1,445 @@
+
+
+.s-hero {
+    background-image: url('../../assets/plan/mobile/image-hero-blackcup.jpg');
+    background-size: cover;
+    color: #FEFCF7;
+    padding: 0 24px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+
+.s-hero > h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.s-hero > p {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* How to */
+
+.how-to {
+    background-color: #2C343E;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3em 2em;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-bottom: 120px;
+}
+section > .line-container {
+    display: none;
+}
+section > .step-by-step > div:nth-child(1) > h1 {
+   margin-top: 0;
+}
+
+section > .step-by-step > .step > h1 {
+    color: var(--pale-orange);
+    font-size: 72px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+section > .step-by-step > .step > h3 {
+    font-size: 28px;
+    font-weight: 900;
+
+}
+
+section > .step-by-step > .step > p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    
+}
+
+/* Subscription */
+.s-categories {
+    display: none;
+}
+.subscription-content {
+  display: flex;
+  flex-direction: column;  
+  gap: 88px; 
+} 
+.subscription {
+    width: 100%;
+}
+.s-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.s-title > label {
+    font-size: 24px;
+    color: #83888F;
+    font-weight: 900;
+}
+
+.s-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-container {
+    padding: 25px;
+    color: #333D4B;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #F4F1EB;
+}
+
+.item-container:hover {
+    background-color: var(--pale-orange);
+   
+}
+
+.item-container > label {
+    cursor: pointer;
+}
+
+.item-container > label > span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+/* Order Summary */
+
+.order-content {
+    background-color: #2C343E;
+    color: white;
+    padding: 37px 25px;
+    border-radius: 10px;
+}
+
+.order-content > h4 {
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.order-content > p {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: inherit;
+    line-height: 40px;
+}
+
+.order-content > p > span {
+    color: #0E8784;
+}
+
+.s-create-plan {
+    align-self: center;
+}
+
+/* Order Modal */
+.modal-content {
+    background-color: #FEFCF7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 620px;
+    width: 327px;
+    z-index: 1;
+}
+
+ .modal-top {
+    background-color: #333D4B;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-top > h1 {
+    color: white;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+ .modal-top > img {
+    width: 20px;
+    cursor: pointer;
+}
+
+ .order-modal-content {
+    padding: 24px;
+}
+
+ .order-modal-content > .order {
+    color: #83888F;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: inherit;
+    line-height: 40px;
+    margin: 10px;
+}
+
+ .order-modal-content > .order > span {
+    color: #0E8784;
+}
+
+.order-modal-content > .placeholder {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 25px;
+}
+
+.order-modal-content > .button-container > p {
+    display: none;
+}
+
+.order-modal-content > .button-container > .checkout-btn::after{
+    content: ' - $14.00 / mo ';
+}
+
+@media screen and (min-width: 768px) {
+    .s-hero {
+        background-image: url('../../assets/plan/tablet/image-hero-blackcup.jpg');
+        height: 400px;
+        width: 689px;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 59px;
+    }
+    .s-hero > h1 {
+        font-size: 48px;
+    }
+
+    .s-hero > p {
+        width: 65%;
+    }
+
+    /* How to */
+
+    section > .line-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 467px;
+    }
+
+    section > .line-container > svg:nth-child(2),  
+    section > .line-container > svg:nth-child(4) {  
+        margin: 0 -7px;
+    }
+
+    section > .step-by-step {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+        gap: 10px;
+        margin-top: 48px;
+    }
+    section > .step-by-step > .step {
+        height: 394px;
+        max-width: 223px;
+    }
+
+    section > .step-by-step > .step > h1 {
+        margin-top: 0;
+    }
+
+    /* Subscription */
+
+    .s-title > label {
+        font-size: 32px;
+    }
+    .s-items {
+        flex-direction: row;
+    }
+    .item-container {
+        height: 250px;
+    } 
+
+    .item-container > label > span {
+        margin-bottom: 24px;
+        margin-top: 32px;
+    }
+
+    .item-container > label {
+        line-height: 26px;
+    }
+
+    /* Order Summary */
+
+    .order-content {
+        padding: 31px 44px;
+    }
+
+    .order-content > h4 {
+        margin: 0;
+    }
+
+    .order-content > p {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    /* Order Modal */
+    .modal-content {
+        height: 597px;
+        width: 540px;
+    }
+
+    .modal-top {
+        padding: 40px 56px;
+    }
+
+    .order-modal-content {
+        padding: 66px 56px;
+    }
+
+    .order-modal-content > .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px
+    }
+    .order-modal-content > .button-container > p {
+        display: unset;
+        font-size: 32px;
+        font-weight: 900;
+        font-family: inherit;
+    }
+    .order-modal-content > .button-container > .checkout-btn::after{
+        content: '';
+    }
+    
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .how-to {
+        padding: 85px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .s-hero {
+        background-image: url('../../assets/plan/desktop/image-hero-blackcup.jpg');
+        width: 95%;
+        height: 500px;
+        max-width: 1120px;
+    }
+
+    .s-hero > h1 {
+        font-size: 72px;
+    }
+
+    .s-hero > p {
+        width: 35%;
+    }
+
+    /* How to */
+
+    .how-to {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    section > .line-container {
+        width: 760px;
+    }
+    section > .line-container > svg:nth-child(2),  
+    section > .line-container > svg:nth-child(4) {  
+        margin: 0 -13px;
+    }
+
+    section > .step-by-step {
+        justify-content: flex-start;
+        margin-top: 82px;
+        gap: 120px;
+    }
+    section > .step-by-step > .step {
+        width: 285px;
+    }
+   
+    section > .step-by-step > .step > h3 {
+        font-size: 32px;
+    }
+
+    section > .step-by-step > .step > p {
+        line-height: 26px;
+    }
+
+    /* Subscription */
+    .subscription {
+        display: flex;
+        max-width: 1120px;
+    }
+    .s-categories { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        gap: 24px;
+    }
+    .s-categories > h3 {
+        margin: 0;
+        font-size: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgb(212, 208, 208);
+        width: 255px;
+        color: #333D4B;
+        opacity: 0.3;
+    }
+
+    .s-categories > h3:nth-child(1) > span {
+        color: #0E8784;
+    }
+
+    .s-categories > h3 > span {
+        margin-right: 10px;
+    }
+
+    .s-title > label {
+        font-size: 40px;
+    }
+
+    .order-content {
+        padding: 51px 64px;
+    }
+
+    .s-create-plan {
+        align-self: flex-end;
+    }
+
+    
+
+}
+
+
