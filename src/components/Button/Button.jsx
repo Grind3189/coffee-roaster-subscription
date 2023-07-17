@@ -13,7 +13,7 @@ function Button( {children, color, fontSize, fontWeight, handleClick, name, isDi
       className={`button-style ${name}`} 
       style={style} 
       onClick={handleClick ? handleClick : null}
-      disabled={!isDisabled}
+      disabled={isDisabled}
       
     >
         {children}

@@ -219,7 +219,7 @@ function Subscribe() {
                     name='s-create-plan'
                     isDisabled={checkTruthyData(subscriptionData)}
                 >
-                    {checkTruthyData(subscriptionData) ? 'Place order' : 'Create my plan!' }
+                    {checkTruthyData(subscriptionData) ? 'Create my plan!' : 'Place order' }
                 </Button>
             </div>
         </section>
