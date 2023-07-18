@@ -105,10 +105,6 @@ section > .step-by-step > .step > p {
     background-color: #F4F1EB;
 }
 
-.item-container:hover {
-    background-color: var(--pale-orange);
-   
-}
 
 .item-container > label {
     cursor: pointer;
@@ -346,6 +342,7 @@ section > .step-by-step > .step > p {
         padding: 85px;
     }
     
+    
 }
 
 @media screen and (min-width: 1440px) {
@@ -436,6 +433,10 @@ section > .step-by-step > .step > p {
 
     .s-create-plan {
         align-self: flex-end;
+    }
+
+    .item-container:hover {
+        background-color: var(--pale-orange);
     }
 
     
