@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import {ToggleContext} from './Toggle'
 
-function ToggleOff({children}) {
+function ToggleDisplay({children}) {
     const {isOpen} = useContext(ToggleContext)
   return (
-    isOpen ? null : children
+     children(isOpen) 
   )
 }
 
-export default ToggleOff
+export default ToggleDisplay

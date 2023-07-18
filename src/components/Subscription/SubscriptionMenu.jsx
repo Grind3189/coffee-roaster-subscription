@@ -3,9 +3,9 @@ import Toggle from '../../components/Toggle/index'
 
 function SubscriptionMenu({children}) {
   return (
-    <Toggle.On>
-      {children}
-    </Toggle.On>
+    <Toggle.Display>
+      {(isOpen) => children(isOpen)}
+    </Toggle.Display>
   )
 }
 

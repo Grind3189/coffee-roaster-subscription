@@ -87,129 +87,154 @@ function Subscribe() {
                         <Subscription.Button />
                     </div>
                     <Subscription.Menu>
-                        <div className="s-items">
-                            <Subscription.Item 
-                                name='preferences'
-                                title='Capsule'
-                                >Compatible with Nespresso systems and similar brewers
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='preferences'
-                                title='Filter'
-                                >For pour over or drip methods like Aeropress, Chemex, and V60
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='preferences'
-                                title='Espresso'
-                                >Dense and finely ground beans for an intense, flavorful experience
-                            </Subscription.Item>
-                        </div>
+                        {(isOpen) => {
+                            return (
+                                <div className={`s-items ${isOpen ? 's-open' : ''}`}>
+                                <Subscription.Item 
+                                    name='preferences'
+                                    title='Capsule'
+                                    >Compatible with Nespresso systems and similar brewers
+                                </Subscription.Item>
+                                <Subscription.Item 
+                                    name='preferences'
+                                    title='Filter'
+                                    >For pour over or drip methods like Aeropress, Chemex, and V60
+                                </Subscription.Item>
+                                <Subscription.Item 
+                                    name='preferences'
+                                    title='Espresso'
+                                    >Dense and finely ground beans for an intense, flavorful experience
+                                </Subscription.Item>
+                                </div>
+                            )
+                        }}
                     </Subscription.Menu>
                 </Subscription>
+
                 <Subscription>
-                <div className="s-title">
-                    <label>What type of coffee?</label>
-                    <Subscription.Button />
-                </div>
-                <Subscription.Menu>
-                    <div className="s-items">
-                        <Subscription.Item 
-                            name='beanType'
-                            title='Single Origin'
-                            >Distinct, high quality coffee from a specific family-owned farm
-                        </Subscription.Item>
-                        <Subscription.Item 
-                            name='beanType'
-                            title='Decaf'
-                            >Just like regular coffee, except the caffeine has been removed
-                        </Subscription.Item>
-                        <Subscription.Item 
-                            name='beanType'
-                            title='Blended'
-                            >Combination of two or three dark roasted beans of organic coffees
-                        </Subscription.Item>
+                    <div className="s-title">
+                        <label>What type of coffee?</label>
+                        <Subscription.Button />
                     </div>
-                </Subscription.Menu>
+                    <Subscription.Menu>
+                        {(isOpen) => {
+                            return (
+                                <div className={`s-items ${isOpen ? 's-open' : ''}`}>
+                                    <Subscription.Item 
+                                        name='beanType'
+                                        title='Single Origin'
+                                        >Distinct, high quality coffee from a specific family-owned farm
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='beanType'
+                                        title='Decaf'
+                                        >Just like regular coffee, except the caffeine has been removed
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='beanType'
+                                        title='Blended'
+                                        >Combination of two or three dark roasted beans of organic coffees
+                                    </Subscription.Item>
+                                </div>
+                            )
+                        }}
+                    </Subscription.Menu>
                 </Subscription>
+
                 <Subscription>
                     <div className="s-title">
                         <label>How much would you like?</label>
                         <Subscription.Button />
                     </div>
                     <Subscription.Menu>
-                        <div className="s-items">
-                            <Subscription.Item 
-                                name='quantity'
-                                title='250g'
-                                >Perfect for the solo drinker. Yields about 12 delicious cups.
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='quantity'
-                                title='500g'
-                                >Perfect option for a couple. Yields about 40 delectable cups.
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='quantity'
-                                title='1000g'
-                                >Perfect for offices and events. Yields about 90 delightful cups.
-                            </Subscription.Item>
-                        </div>
+                        {(isOpen) => {
+                            return (
+                                <div className={`s-items ${isOpen ? 's-open' : ''}`}>
+                                    <Subscription.Item 
+                                        name='quantity'
+                                        title='250g'
+                                        >Perfect for the solo drinker. Yields about 12 delicious cups.
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='quantity'
+                                        title='500g'
+                                        >Perfect option for a couple. Yields about 40 delectable cups.
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='quantity'
+                                        title='1000g'
+                                        >Perfect for offices and events. Yields about 90 delightful cups.
+                                    </Subscription.Item>
+                                </div>
+                            )
+                        }}
+                       
                     </Subscription.Menu>
                 </Subscription>
+
                 <Subscription>
                     <div className="s-title">
                         <label>Want us to grind them?</label>
                         <Subscription.Button />
                     </div>
                     <Subscription.Menu>
-                        <div className="s-items">
-                            <Subscription.Item 
-                                name='grind'
-                                title='Wholebean'
-                                >Best choice if you cherish the full sensory experience
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='grind'
-                                title='Filter grind'
-                                >For drip or pour-over coffee methods such as V60 or Aeropress
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='grind'
-                                title='Cafetiére'
-                                > Course ground beans specially suited for french press coffee
-                            </Subscription.Item>
-                        </div>
+                        {(isOpen) => {
+                            return (
+                                <div className={`s-items ${isOpen ? 's-open' : ''}`}>
+                                    <Subscription.Item 
+                                        name='grind'
+                                        title='Wholebean'
+                                        >Best choice if you cherish the full sensory experience
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='grind'
+                                        title='Filter grind'
+                                        >For drip or pour-over coffee methods such as V60 or Aeropress
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='grind'
+                                        title='Cafetiére'
+                                        > Course ground beans specially suited for french press coffee
+                                    </Subscription.Item>
+                                </div>
+                            )
+                        }}
                 </Subscription.Menu>
                 </Subscription>
+
                 <Subscription>
                     <div className="s-title">
                         <label>How often should we deliver?</label>
                         <Subscription.Button />
                     </div>
                     <Subscription.Menu>
-                        <div className="s-items">
-                            <Subscription.Item 
-                                name='deliveries'
-                                title='Every week'
-                                >$7.20 per shipment. Includes free first-class shipping.
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='deliveries'
-                                title='Every 2 weeks'
-                                >$9.60 per shipment. Includes free priority shipping.
-                            </Subscription.Item>
-                            <Subscription.Item 
-                                name='deliveries'
-                                title='Every month'
-                                >$12.00 per shipment. Includes free priority shipping.
-                            </Subscription.Item>
-                        </div>
+                        {(isOpen) => {
+                            return (
+                                <div className={`s-items ${isOpen ? 's-open' : ''}`}>
+                                    <Subscription.Item 
+                                        name='deliveries'
+                                        title='Every week'
+                                        >$7.20 per shipment. Includes free first-class shipping.
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='deliveries'
+                                        title='Every 2 weeks'
+                                        >$9.60 per shipment. Includes free priority shipping.
+                                    </Subscription.Item>
+                                    <Subscription.Item 
+                                        name='deliveries'
+                                        title='Every month'
+                                        >$12.00 per shipment. Includes free priority shipping.
+                                    </Subscription.Item>
+                                </div>
+                            )
+                        }}
+                        
                     </Subscription.Menu>
                 </Subscription>
                 <div className="order-summary">
                     <OrderSummary />
                 </div>
-
 
                 <Button 
                     color='white' 
