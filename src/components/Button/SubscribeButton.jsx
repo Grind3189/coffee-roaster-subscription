@@ -1,6 +1,5 @@
 import React from 'react'
 import arrowIcon from '../../assets/plan/desktop/icon-arrow.svg'
-import arrowUpside from '../../assets/plan/desktop/icon-arrow-upside.svg'
 import './button.css'
 
 function SubscribeButton({isOpen}) {
@@ -10,8 +9,8 @@ function SubscribeButton({isOpen}) {
     cursor: 'pointer'
   }
   return (
-    <button style={style} className='subscribe-btn'>
-        <img src={isOpen ? arrowUpside : arrowIcon} alt='arrow icon' />
+    <button style={style}>
+        <img src={arrowIcon} alt='arrow icon' className={`arrow-icon ${isOpen ? 'arrow-upside' : ''}`} />
     </button>
   )
 }
