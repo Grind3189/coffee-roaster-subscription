@@ -287,6 +287,7 @@ section > .step-by-step > .step > p {
     .s-items {
         flex-direction: row;
         transform: translateX(50%);
+        transition: opacity 100ms, visibility 100ms, transform 100ms;
     }
     .s-open {
         transform: translateX(0);
